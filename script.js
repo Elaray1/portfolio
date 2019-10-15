@@ -29,6 +29,16 @@ window.onload = function() {
     }
   });
 
+  if (document.body.clientWidth > 640) {
+    setInterval(() => {
+      if (leftPosition.style.left == "-600px") {
+        leftPosition.style.left = "0px";
+      } else {
+        leftPosition.style.left = "-600px";
+      }
+    }, 5000);
+  }
+
   let descriptionButton = document.querySelectorAll('.show-description-button');
   let showHide = document.getElementsByClassName('show-description-mobile')[0].getElementsByTagName('p')[0].getElementsByTagName('span')[0];
   let content = document.querySelectorAll('.slider_content_block div.content');
@@ -297,8 +307,6 @@ window.onload = function() {
   // вызов функции swipe с предварительными настройками
   swipe(slider, { maxTime: 3000, minTime: 100, maxDist: 350,  minDist: 10 });
 
-  console.log(document.body.clientWidth);
-
   // обработка свайпов
   slider.addEventListener("swipe", function(e) {
     if (document.body.clientWidth <= 640) {
@@ -315,4 +323,14 @@ window.onload = function() {
       }
     }
   });
+
+  if (document.body.clientWidth <= 640) {
+    setInterval(() => {
+      if (leftPosition.style.left == "-375px") {
+        leftPosition.style.left = "0px";
+      } else {
+        leftPosition.style.left = "-375px";
+      }
+    }, 5000);
+  }
 }
