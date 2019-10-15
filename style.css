@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Raleway', sans-serif;
+  background-image: url('assets/astronomy-dolomites-evening-1624496.jpg');
+  background-size: cover;
+  padding-bottom: 300px;
+}
+.content-width {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+}
+.profile-info {
+  padding: 0 15% 30px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+  border-bottom: 5px solid #00416a;
+}
+.profile-info_img img{
+  width: 200px;
+  border-radius: 50%;
+  border: 3px solid #00416a;
+}
+.profile-info-links h2 {
+  margin-bottom: 30px;
+  color: white;
+  font-size: 45px;
+}
+.profile-info-links p,
+.profile-info-links a {
+  color: #4682B4;
+  font-size: 30px;
+}
+.profile-info-links a:hover {
+  color: #1E90FF;
+}
+#expansion-panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-size: 25px;
+  border-bottom: 3px solid #00416a;
+  cursor: pointer;
+}
+#expansion-panel img{
+  width: 150px;
+}
+.education-info_block {
+  color: white;
+  font-size: 24px;
+  margin-top: 30px;
+}
+#education-info {
+  border-bottom: 3px solid #00416a;
+  padding-bottom: 30px;
+}
+.slider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.slider_content {
+  overflow: hidden;
+  width: 600px;
+  height: 350px;
+  background-color: rgba(0, 191, 255, 0.5);
+}
+#slider_content_slides {
+  display: flex;
+  width: 1200px;
+  height: 350px;
+}
+.slider_content_block {
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+  height: 350px;
+  padding-left: 30px;
+}
+.slider img {
+  width: 150px;
+  cursor: pointer;
+}
+.theyalow {
+  width: 254px !important;
+}
+.projects h2 {
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+.projects h3 {
+  color: white;
+  font-size: 30px;
+  margin-bottom: 40px;
+  margin-top: 30px;
+}
+.projects ul {
+  color: white;
+  font-size: 20px;
+}
+.projects li {
+  margin-bottom: 10px;
+}
+#slider_content_slides {
+  position: relative;
+  left: 0px;
+  transition: all 1s ease;
+}
+.rdp {
+  height: 900px;
+}
+.show-description-mobile {
+  display: none;
+}
+@media screen and (max-width: 640px) {
+  .profile-info {
+    padding: 0 2% 30px;
+  }
+  .profile-info_img img {
+    width: 130px;
+  }
+  .profile-info-links h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .profile-info-links p, .profile-info-links a {
+    font-size: 24px;
+  }
+  #expansion-panel {
+    font-size: 20px;
+  }
+  #expansion-panel img{
+    width: 100px
+  }
+  .education-info_block {
+    font-size: 20px;
+  }
+  .projects h2 {
+    font-size: 26px;
+  }
+  #left-controller,
+  #right-controller {
+    display: none;
+  }
+  #slider_content_slides {
+    width: 750px;
+  }
+  .slider_content {
+    width: 375px;
+    padding-top: 20px;
+  }
+  .slider_content_block {
+    width: 375px;
+    flex-direction: column;
+  }
+  .slider_content_block {
+    padding-left: 0;
+    min-height: 375px;
+  }
+  .slider_content_block div.content{
+    display: none;
+    text-align: center;
+  }
+  .slider a {
+      margin: 0 auto;
+  }
+
+  .show-description-mobile {
+    display: flex;
+    justify-content: space-between;
+    width: 375px;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
+  .show-description-button img {
+    width: 50px;
+  }
+  .show-description-mobile p{
+    font-size: 20px;
+    color: white;
+  }
+  .slider_content {
+    margin: 0 auto;
+  }
+}
