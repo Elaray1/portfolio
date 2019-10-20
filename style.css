@@ -67,12 +67,13 @@ ul {
   margin-top: 30px;
 }
 #education-info {
+  display: none;
   border-bottom: 3px solid #00416a;
   padding-bottom: 30px;
 }
 .slider {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 .slider_content {
@@ -88,7 +89,7 @@ ul {
 }
 .slider_content_block {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 600px;
   height: 350px;
   padding-left: 30px;
@@ -174,7 +175,7 @@ ul {
   }
   .slider_content_block {
     padding-left: 0;
-    min-height: 375px;
+    min-height: 500px;
   }
   .slider_content_block div.content{
     display: none;
@@ -203,4 +204,22 @@ ul {
   .slider_content {
     margin: 0 auto;
   }
+  .swiper-container {
+      width: 300px;
+      height: 500px;
+  }
+  a {
+    width: fit-content;
+  }
+  .slider_content_block {
+    display: block;
+    margin-left: 100px;
+  }
+}
+
+
+
+.swiper-container {
+    width: 800px;
+    height: 500px;
 }

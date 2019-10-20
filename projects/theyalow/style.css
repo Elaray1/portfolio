@@ -1139,6 +1139,7 @@ body {
 }
 
 #mobile-wrapper {
+  display: none;
   position: fixed;
   overflow: scroll;
   text-align: center;

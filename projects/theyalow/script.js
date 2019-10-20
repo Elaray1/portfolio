@@ -6,8 +6,12 @@ window.onload = function() {
   	isFramed = true;
   }
   const dmb = document.querySelector('.desctop-mobile-back');
-  if (isFramed || (document.body.clientWidth + 17) <= 640) {
+  if (isFramed) {
     dmb.style.display = 'none';
+  }
+  const desctopMobile = document.getElementById('desctop-mobile');
+  if ((document.body.clientWidth + 17) <= 640) {
+    desctopMobile.style.display = 'none';
   }
 
   const dmButton = document.getElementById('desctop-mobile');

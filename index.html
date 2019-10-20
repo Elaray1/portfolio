@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
   </head>
   <body>
@@ -41,50 +42,65 @@
       </div>
       <div class="projects">
         <h2>Projects</h2>
-        <div class="slider">
-          <img id="left-controller" src="assets\left_arrow.png" alt="">
-          <div class="slider_content">
-            <div id="slider_content_slides">
-              <div class="slider_content_block">
-                <div class="show-description-mobile">
-                  <p><span>Show</span> description</p>
-                  <div class="show-description-button">
-                    <img src="assets\button.png" alt="">
+
+
+                <!-- Slider main container -->
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <div class="slider_content_block">
+                    <div class="show-description-mobile">
+                      <p><span>Show</span> description</p>
+                      <div class="show-description-button">
+                        <img src="assets\button.png" alt="">
+                      </div>
+                    </div>
+                    <div class="content">
+                      <h3>Theyalow</h3>
+                      <ul>
+                        <li>Perfect pixeled</li>
+                        <li>Svg icons</li>
+                        <li>Responsive</li>
+                      </ul>
+                    </div>
+                    <a href="projects\theyalow\index.html"><img class="theyalow" src="assets\THEYALOW Desktop.jpg"></a>
                   </div>
                 </div>
-                <div class="content">
-                  <h3>Theyalow</h3>
-                  <ul>
-                    <li>Perfect pixeled</li>
-                    <li>Svg icons</li>
-                    <li>Responsive</li>
-                  </ul>
-                </div>
-                <a href="projects\theyalow\index.html"><img class="theyalow" src="assets\THEYALOW Desktop.jpg"></a>
-              </div>
-              <div class="slider_content_block">
-                <div class="show-description-mobile">
-                  <p><span>Show</span> description</p>
-                  <div class="show-description-button">
-                    <img src="assets\button.png" alt="">
+                <div class="swiper-slide">
+                  <div class="slider_content_block">
+                    <div class="show-description-mobile">
+                      <p><span>Show</span> description</p>
+                      <div class="show-description-button">
+                        <img src="assets\button.png" alt="">
+                      </div>
+                    </div>
+                    <div class="content">
+                      <h3>Reapair-design-project</h3>
+                      <ul>
+                        <li>Full Responsive</li>
+                        <li>Forms with requed inputs</li>
+                        <li>Interactive elements</li>
+                      </ul>
+                    </div>
+                    <a href="projects\repair-design-project\index.html"><img class="rdp" src="assets\HOME.jpg" alt=""></a>
                   </div>
                 </div>
-                <div class="content">
-                  <h3>Reapair-design-project</h3>
-                  <ul>
-                    <li>Full Responsive</li>
-                    <li>Forms with requed inputs</li>
-                    <li>Interactive elements</li>
-                  </ul>
-                </div>
-                <a href="projects\repair-design-project\index.html"><img class="rdp" src="assets\HOME.jpg" alt=""></a>
-              </div>
             </div>
-          </div>
-          <img id="right-controller" src="assets\right_arrow.png" alt="">
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
         </div>
+
+
+
+
       </div>
     </div>
   </body>
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
   <script type="text/javascript" src="script.js"></script>
 </html>
